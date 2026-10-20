@@ -1,16 +1,27 @@
-# CO-1034-Shared-Projects-
-the team members are :
+
+# CO-1034 Shared Projects
+
+## Team Members
+
+The following students are working together on the CO-1034 group project.
+
+| No. | Name | Student ID | Role |
+|---|---|---|---|
+| 1 | Hamin Sharier Plabon | G21331778 | Team Leader |
+| 2 | Athina De Silvva | G21331768 | Team Member |
+| 3 | Rosan Sonali Aluthgedara | G21331775 | Team Member |
+| 4 | Jolok Chandra Bhowmik | G21366809 | Team Member |
+
+## Project Information
+
+- **Module:** CO-1034
+- **Repository:** CO-1034-Shared-Projects
+- **Team Size:** 4 Members
+
+## Project Purpose
+
+This repository is used to collaborate on project tasks, share code, manage changes, and maintain project documentation using Git and GitHub.
 
 
-1.Hamin Sharier Plabon 
-(hsplabon@uclan.ac.uk)
-G21331778(Leader)
-2.Athina De Silvva
-(dcade-silva@uclan.ac.uk)
-G21331768
-3.Rosan Sonali Aluthgedara
-(rsaluthgedara@uclan.ac.uk)
-G21331775
-4.Jolok Chandra Bhowmik
-(jcbhowmik@uclan.ac.uk)
-G21366809
+---
+*CO-1034 University Group Project*
