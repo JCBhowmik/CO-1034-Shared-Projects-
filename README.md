@@ -17,7 +17,7 @@ The following students are working together on the CO-1034 group project.
 
 - **Module:** CO-1034
 - **Repository:** CO-1034-Shared-Projects
-- **Team Size:** 4 Members
+- **Team Size:** 5 Members
 
 ## Project Purpose
 
