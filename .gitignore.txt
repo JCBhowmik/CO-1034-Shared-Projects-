@@ -1,4 +1,0 @@
-.vs/
-.idea/
-*.user
-*.suo
