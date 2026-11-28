@@ -8,9 +8,9 @@ The following students are working together on the CO-1034 group project.
 | No. | Name | Student ID | Role |
 |---|---|---|---|
 | 1 | Hamin Sharier Plabon | G21331778 | Team Leader |
-| 2 | Jolok Chandra Bhowmik | G21366809 | Team Member |
+| 2 | Athina De Silva | G21331768 | Team Member |
 | 3 | Rosan Sonali Aluthgedara | G21331775 | Team Member |
-| 4 | Athina De Silva | G21331768 | Team Member |
+| 4 | Jolok Chandra Bhowmik | G21366809 | Team Member |
 | 5 | Nouraldin Abutaima  | G21380330   | Team Member|
 
 ## Project Information

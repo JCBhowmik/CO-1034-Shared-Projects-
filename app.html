@@ -1,63 +1,159 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+    HEAD SECTION
+    Contains information about the webpage.
+    This information is mostly not displayed directly on the page.
+-->
 <head>
+
+    <!-- Defines the character encoding so the browser displays text correctly -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different screen sizes,
+         such as computers, tablets and mobile phones -->
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
+    <!-- Sets the title displayed in the browser tab -->
     <title>Treasure Hunt Game</title>
 
+    <!-- Connects the external CSS file used to style the webpage -->
     <link rel="stylesheet" href="css/app.css">
+
+    <!-- Connects the JavaScript file that controls the game.
+         The defer attribute makes JavaScript run after the HTML is loaded -->
     <script src="js/app.js" defer></script>
+
 </head>
 
+<!-- BODY SECTION
+     Contains all the content that players can see and interact with -->
 <body>
 
-<!-- Navigation -->
+<!-- HEADER AND NAVIGATION
+     Displays the game name and a link to return to the homepage -->
 <header>
+
     <nav>
+
+        <!-- Main title of the website -->
         <h1>Treasure Hunt</h1>
+
+        <!-- Link that takes the player back to the homepage -->
         <a href="index.html" title="Back to Homepage">Home</a>
+
     </nav>
+
 </header>
 
+<!-- MAIN SECTION
+     Contains the main content and features of the Treasure Hunt game -->
 <main>
 
-    <!-- Game Information -->
+    <!-- GAME SETUP
+         Allows players to enter their name and choose a treasure hunt -->
+    <section class="game-setup">
+
+        <!-- Heading that introduces the game setup -->
+        <h2>Start Your Treasure Hunt</h2>
+
+        <!-- Label connected to the player name input field -->
+        <label for="player-name">Player Name</label>
+
+        <!-- Text input where the player enters their name.
+             The ID allows JavaScript to find and use this input -->
+        <input type="text"
+               id="player-name"
+               placeholder="Enter your name">
+
+        <!-- Label for the treasure hunt selection menu -->
+        <label for="hunt-list">Choose Treasure Hunt</label>
+
+        <!-- Dropdown menu where available treasure hunts
+             can be added dynamically using JavaScript -->
+        <select id="hunt-list"></select>
+
+        <!-- Button that starts the game when clicked.
+             JavaScript handles the actual game-starting process -->
+        <button type="button" id="start-game">
+            Start Game
+        </button>
+
+        <!-- Displays messages to the player,
+             such as errors or instructions when starting the game.
+             role="status" helps screen readers announce updates -->
+        <p id="start-message" role="status"></p>
+
+    </section>
+
+    <!-- GAME INFORMATION
+         Displays important information about the current game -->
     <section class="game-info">
 
+        <!-- SCORE BOX
+             Shows the player's current score -->
         <div class="score-box">
+
+            <!-- Heading for the score section -->
             <h3>Your Score</h3>
+
+            <!-- Initial score is zero points.
+                 JavaScript can update this value during the game -->
             <p id="score">0 Points</p>
+
         </div>
 
+        <!-- LOCATION BOX
+             Shows the player's GPS connection or location status -->
         <div class="location-box">
+
+            <!-- Heading for the location section -->
             <h3>Location</h3>
+
+            <!-- Initial message shown before GPS is connected.
+                 JavaScript can update this when location is available -->
             <p id="location-status">GPS not connected</p>
+
         </div>
 
     </section>
 
-    <!-- Question Area -->
+    <!-- QUESTION SECTION
+         Contains the questions and answer controls for the game -->
     <section class="question-section">
 
+        <!-- Heading introducing the treasure hunt challenges -->
         <h2>Treasure Hunt Challenge</h2>
 
+        <!-- QUESTION CARD
+             Groups the question, answer input and game controls together -->
         <article class="question-card">
 
+            <!-- Displays the current question title.
+                 JavaScript can change it for each new question -->
             <h3 id="question-title">Question</h3>
 
+            <!-- Displays the actual question text.
+                 The question will be added using JavaScript -->
             <p id="question-text">
                 Your question will appear here.
             </p>
 
+            <!-- ANSWER FORM
+                 Collects the player's answer and handles submission -->
             <form id="answer-form">
 
+                <!-- Label describing the answer input field -->
                 <label for="answer">
                     Your Answer
                 </label>
 
+                <!-- Text field where the player types their answer.
+                     The name attribute identifies the form field.
+                     The required attribute prevents an empty submission -->
                 <input
                         type="text"
                         id="answer"
@@ -66,16 +162,26 @@
                         required
                 >
 
-                <button type="submit" id="submit-answer">
+                <!-- Submit button used to send the player's answer.
+                     It starts disabled and JavaScript can enable it
+                     when the game is ready -->
+                <button type="submit" id="submit-answer" disabled>
                     Submit Answer
                 </button>
 
             </form>
 
-            <button type="button" id="skip-question">
+            <!-- SKIP BUTTON
+                 Allows the player to skip the current question.
+                 It starts disabled until JavaScript enables it -->
+            <button type="button" id="skip-question" disabled>
                 Skip Question
             </button>
 
+            <!-- FEEDBACK AREA
+                 Displays messages such as correct answers,
+                 incorrect answers or other game instructions.
+                 aria-live="polite" helps screen readers announce changes -->
             <p id="answer-feedback" role="status"
                aria-live="polite"></p>
 
@@ -83,24 +189,37 @@
 
     </section>
 
-    <!-- Leaderboard -->
+    <!-- LEADERBOARD SECTION
+         Displays player rankings and scores -->
     <section class="leaderboard-section">
 
+        <!-- Heading for the leaderboard -->
         <h2>Leaderboard</h2>
 
+        <!-- Container that holds the leaderboard information -->
         <div class="leaderboard-card">
+
+            <!-- Initial message displayed before player rankings
+                 become available. JavaScript can replace this text -->
             <p id="leaderboard-status">
                 Player rankings will appear here.
             </p>
+
         </div>
 
     </section>
 
 </main>
 
+<!-- FOOTER
+     Appears at the bottom of the webpage -->
 <footer>
+
+    <!-- Displays the application name -->
     <p>Treasure Hunt Web Application</p>
+
 </footer>
 
 </body>
+
 </html>
